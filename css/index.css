@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+body{
+
+    margin: 0;
+    background:white;
+    font-family: open sans;
+    font-family: Arial;
+    font-size:11px;
+}
+.container{
+    width:100%;
+    background: white;
+    margin:  0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.menu_item {
+    float: right;
+    list-style-type: none;
+    padding: 10px;
+
+
+}
+.menu_item  a {
+
+    text-decoration: none;
+    color: #edebec;
+    font-size: 17px;
+    line-height: 35px;
+    padding-left: 42px;
+   
+
+
+}
+
+.clear{
+    clear:both;
+}
+header{
+    margin: 0;
+    position: fixed;
+    height: 60px;
+    width: 100%;
+    top: 0;
+    padding-right: 100px;
+    background: rgba(45, 45, 46, 1);
+    box-shadow: 0 7px 9px 0 #edebec;
+
+
+}
+.logo {
+    padding-right: 0;
+    float: right;
+    height:60px;
+    width:60px;
+    border-radius: 20px 20px 20px 20px;
+}
+.top-header{
+    padding-right: 0;
+
+}
+li{
+    text-shadow: 4px 4px 4px  gray;
+    font-size: 12px;
+    font-style: italic;
+
+
+}
+.menu_item a:hover {
+    color: rgba(173, 176, 175, 0.76);
+    border-bottom: 1px solid rgba(252, 230, 96, 0.02);
+}
+.account-btn{
+    float: left;
+    padding-left: 120px;
+    padding-top: 10px;
+}
+.account-btn a {
+    text-decoration: none;
+    font-size:10px;
+    color: white;
+    background: darkseagreen;
+    border-radius: 8px 0 8px 0;
+    padding: 2px;
+
+}
+.active {
+    color: red !important;
+}
+
+#nav {
+
+     margin-top:61px;
+     padding:0;
+     list-style:none;
+
+ }
+
+.clear {
+    clear:both
+}
+
+/* make the LI display inline */
+/* it's position relative so that position absolute */
+/* can be used in submenu */
+#nav li {
+    float:right;
+    display:block;
+    width:335px;
+    background: #b8b8b8;
+    position:relative;
+    z-index:400;
+    margin:0 1px;
+    float: right;
+}
+
+/* this is the parent menu */
+#nav li a {
+    display:block;
+    padding:5px 5px 0 5px;
+    font-weight:600;
+    height:33px;
+    text-decoration:none;
+    color:#fff;
+    text-align:center;
+    color:#333;
+}
+
+#nav li a:hover {
+    color:#fff;
+}
+
+/* submenu, it's hidden by default */
+#nav ul {
+    position:absolute;
+    left:0;
+    display:none;
+    margin:0 0 0 -1px;
+    padding:0;
+    list-style:none;
+}
+#nav ul li {
+    width:80px;
+    float:left;
+    font-size: 10px;
+    border-top:1px solid #fff;
+}
+
+/* display block will make the link fill the whole area of LI */
+#nav ul a {
+    display:block;
+    height:30px;
+    padding: 5px 3px;
+    color:#666;
+}
+
+#nav ul a:hover {
+    text-decoration:underline;
+}
+
+/* fix ie6 small issue */
+/* we should always avoid using hack like this */
+/* should put it into separate file : ) */
+*html #nav ul {
+    margin:0 0 0 -2px;
+}
+* {
+    margin:0px;
+    padding:0px;
+    border:0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul,ol {
+    list-style: none;
+}
+body{
+
+}
+
+.slide-show{
+    width: 100%;
+    position: relative;
+    float: right;
+}
+.slide li, ul{
+    width: 100%;
+}
+.slide li{
+    overflow: hidden;
+}
+.slide ul,img{
+    width: 100%;
+}
+.slide .caption{
+   position: absolute;
+    width: 100%;
+    height:100%;
+    top:0 ;
+    left:0 ;
+    padding: 15px 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    color: white;
+    z-index: 1;
+}
+.slide .caption h1{
+    font-size: 50px;
+}
+.slide .caption p{
+    margin-top: 10px;
+    font-size: 20px;
+}
+.page{
+    position: absolute;
+    top:93%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page li{
+    font-size: 20px;
+    margin: 2px 5px;
+    color: #b8b8b8;
+    cursor: pointer;
+}
+.left , .right {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+    z-index: 2;
+}
+.left{
+    left: 10px;
+}
+.right{
+    right: 10px;
+}
+@media screen and (max-width: 600px){
+.slide .caption p{
+    display: none;
+}
+    .slide .caption h1{
+        font-size: 35px;
+    }
+
+.left , .right{
+    font-size: 30px;
+}
+.slide li img{
+    width: 600px;
+}
+.page{
+    display: none;
+
+}
+}
+#list div{
+
+    margin: 7px;
+    float:right ;
+    border: 2px solid rgb(111,0,0);
+    direction: rtl;
+    width: 150px;
+    height: 150px;
+}
+
+#list div:hover{
+    border: 5px solid rgb(245, 153, 206);
+}
+#list div img{
+    height: 100px
+
+}
+.title h2{
+   text-align: center;
+    padding: 30px;
+    text-shadow: 4px 4px 4px  grey;
+}
+.main2{
+    max-width: 200px;
+   padding-left: 33px;
+
+}
+#search{
+    width: 90%;
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid lightgray;
+    border-right: 0;
+    border-radius: 5px 0 0 5px;
+    font-style: italic;
+}
+#btn{
+    position:absolute;
+    padding: 5px;
+    width: 60px;
+    font-size: 17px;
+    text-shadow: 0 0 1px #000;
+    cursor: pointer;
+    text-align:center ;
+    color: aquamarine;
+    border-right: 0;
+    background: linear-gradient(#00adee,#0078a5);
+    border: 1px solid #b8b8b8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+footer{
+    top: 900px;
+    position: relative;
+    bottom: 0px;
+    width: 100%;
+    height: 200px;
+    left:0;
+    margin:0 0 0 -1px;
+    padding:0;
+    background: #666666;
+}
+
+.footer{
+    display: flex;
+
+}
+.footer .box{
+    flex-basis: 50%;
+    padding: 10px 20px ;
+
+}
+.box h3{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+
+}
+.box .content{
+    margin: 20px 0 0 0;
+}
+.left .content p{
+    text-align: justify;
+    font-size: 15px;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+    size: 5px;
+}
+.left .content .social a{
+    padding: 0 2px;
+}
+.left .content .social a span{
+    height: 30px;
+    width: 30px;
+    background: #eeeeee;
+    line-height: 30px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+.left .content .social a span:hover{
+    background: red;
+
+}
+.center {
+    color: white;
+    font-size: 18px;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+.text{
+    font-size: 15px;
+    margin-top: 0px;
+
+}
+.place .text{
+    font-size: medium;
+    text-align: center;
+}
+
